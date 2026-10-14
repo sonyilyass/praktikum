@@ -1,0 +1,22 @@
+public class MahasiswaApp {
+    public static void main(String[] args) {
+        DataArray arr = new DataArray(10);
+
+        arr.insert(200401, "Dian");
+        arr.insert(200405, "Ahmad");
+        arr.insert(200402, "Eka");
+        arr.insert(200404, "Budi");
+        arr.insert(200403, "Cici");
+
+        System.out.println("=== DATA SEBELUM DILAKUKAN SORTING ===");
+        arr.display();
+
+        System.out.println("=== SHELL SORT BERDASARKAN NIM ===");
+        arr.shellSortByNim();
+        arr.display();
+
+        System.out.println("=== QUICK SORT BERDASARKAN NAMA ===");
+        arr.quickSortByNama();
+        arr.display();
+    }
+}
