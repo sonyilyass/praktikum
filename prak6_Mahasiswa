@@ -1,0 +1,21 @@
+public class Mahasiswa {
+    private long nim;
+    private String nama;
+
+    public Mahasiswa(long nim, String nama) {
+        this.nim = nim;
+        this.nama = nama;
+    }
+
+    public long getNim() {
+        return nim;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void displayMahasiswa() {
+        System.out.println("NIM : " + nim + ", Nama : " + nama);
+    }
+}
